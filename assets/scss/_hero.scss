@@ -1,0 +1,335 @@
+.hero{
+    background: #1F4DCA;
+    padding: 30px 0 120px 0;
+    overflow: hidden;
+    @media#{$tap}{
+        padding: 30px 0 50px 0;
+    }
+    @media#{$bigmobile}{
+        padding: 30px 0 60px 0;
+    }
+    &__start{
+        margin-top: 92px;
+        --bs-gutter-x: 24px;
+        @media#{$bigtap}{
+            margin-top: 60px;
+        }
+        @media#{$tap}{
+            flex-direction: column-reverse;
+            position: relative;
+            margin-top: 114px;
+        }
+        &--left{
+            margin-top: 50px;
+            z-index: 2;
+            @media#{$tap}{
+                position: relative;
+                margin-top: 20px;
+                padding-top: 70px;
+            }
+            @media#{$mabile}{
+                margin-top: 32px;
+                padding-top: 84px;
+            }
+            .left-title{
+                color: #FFF;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -1.28px;
+                @media#{$tap}{
+                    font-size: 35px;
+                    line-height: 35px;
+                    position: absolute;
+                    top: -700px;
+                    width: 100%;
+                }
+                @media#{$mabile}{
+                    font-size: 32px;
+                    letter-spacing: -0.64px;
+                    line-height: 32px;
+                    top: -562px;
+                }
+                // @media#{$tap}{
+                //     margin-top: 40px;
+                // }
+            }
+            ul{
+                margin-top: 40px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap:20px 0;
+                @media#{$tap}{
+                    margin-top: 20px;
+                }
+                @media#{$bigmobile}{
+                    gap:16px 0;
+                }
+                @media#{$mabile}{
+                    margin-top: 0;
+                }
+                li{
+                    display: flex;
+                    align-items: start;
+                    gap:0 6px;
+                    p{
+                        color: rgba(255, 255, 255, 0.80);
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 25px;
+                        letter-spacing: -0.36px;
+                        @media#{$bigtap}{
+                            font-size: 16px;
+                        }
+                        @media#{$mabile}{
+                            letter-spacing: -0.32px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+            .button{
+                margin-top: 40px;
+                @media#{$tap}{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 0;
+                    width: 100%;
+                }
+                a{
+                    display: inline-block;
+                    padding: 18px 36px;
+                    border-radius: 27px;
+                    background: #84E2F3;
+                    text-decoration: none;
+                    color:#27292E;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 18px;
+                    transition: .3s all ease;
+                    &:hover{
+                        background-color: #A1E8F5;
+                    }
+                    @media#{$tap}{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .col-6,
+        .col-md-6{
+            z-index: 2;
+            &:last-child{
+                z-index: 1;
+            }
+        }
+        &--right{
+            display: flex;
+            align-items: end;
+            gap:0 3px;
+            background: url(../img/aperator.png) center top/381px no-repeat,
+            url(../img/Vector1.svg) left bottom no-repeat
+            #1F4DCA;
+            border-radius: 30px;
+            height: 588px;
+            position: relative;
+            padding: 10px;
+            @media#{$smalllaptop}{
+                flex-direction: column;
+                justify-content: end;
+                gap:10px 0;
+                background: url(../img/aperator.png) center top/330px no-repeat,
+                url(../img/Vector1.svg) left bottom no-repeat
+                #1F4DCA;
+            }
+            @media#{$mabile}{
+                background: url(../img/aperator.png) center bottom/252px no-repeat,
+                url(../img/Vector1.svg) -35px 71px/320px no-repeat
+                #1F4DCA;
+                height: 450px;
+                padding: 5px;
+                border-radius: 24px;
+                gap:5px 0;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 1000px;
+                height: 1000px;
+                border-radius: 1000px;
+                background: rgba(65, 111, 237, 0.70);
+                filter: blur(150px);
+                left: -50%;
+                top: -50%;
+                z-index: -1;
+            }
+            .right-item{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap:10px 0;
+                @media#{$mabile}{
+                    gap:5px 0;
+                }
+                .item{
+                    flex: 0 0 auto;
+                    width: 100%;
+                    display: flex;
+                    gap:0 10px;
+                    align-items: center;
+                    border-radius: 30px;
+                    border-radius: 30px;
+                    background: linear-gradient(90deg, rgba(132, 226, 243, 0.80) 0%, rgba(35, 81, 206, 0.80) 100%);
+                    backdrop-filter: blur(4px);
+                    padding: 10px;
+                    @media#{$mabile}{
+                        padding: 4px 41px 4px 5px;
+                        border-radius: 12px;
+                    }
+                    .img{
+                        flex: 0 0 auto;
+                        width: 58px;
+                        height: 58px;
+                        border-radius: 50%;
+                        background-color: #1F4DCA;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media#{$bigtap}{
+                            width: 48px;
+                            height: 48px;
+                        }
+                        @media#{$mabile}{
+                            width: 42px;
+                            height: 42px;
+                        }
+                        img{
+                            flex:  0 0 auto;
+                            @media#{$mabile}{
+                                width: 20px;
+                            }
+                        }
+                    }
+                    p{
+                        color: #FFF;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: -0.54px;
+                        @media#{$bigtap}{
+                            font-size: 16px;
+                            line-height: 17px;
+                        }
+                        @media#{$mabile}{
+                            font-size: 14px;
+                            letter-spacing: -0.42px;
+                            line-height: 17px;
+                            width: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu__container{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 68, 255, 0.6);
+        backdrop-filter: blur(5px);
+        z-index: 8;
+        top: 0;
+        display: none;
+        .menu-result{
+            width: calc(100% - 40px);
+            margin: 130px auto 0 auto;
+            .hour{
+                text-decoration: none;
+                text-align: center;
+                p{
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 14px;
+                    letter-spacing: -0.28px;
+                    &:first-child{
+                        display: flex;
+                        align-items: center;
+                        gap:0 6px;
+                        justify-content: center;
+                        color: rgba(255, 255, 255, 0.70);
+                    }
+                    &:last-child{
+                        color: #FFF;
+                        margin-top: 3px;
+                    }
+                }
+            }
+            .phone{
+                text-align: center;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px 0;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    color: #FFF;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 17px;
+                    letter-spacing: -0.34px;
+                    p{
+                        color: #84E2F3;
+                        text-align: center;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 13px;
+                        letter-spacing: -0.26px;
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .network{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:0 10px;
+                margin-top: 60px;
+                a{
+                    flex: 0 0 auto;
+                }
+            }
+            ul{
+                margin-top: 30px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap:20px 0;
+                li{
+                    line-height: 0;
+                    a{
+                        text-decoration: none;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 16px;
+                        letter-spacing: -0.32px;
+                    }
+                }
+            }
+        }
+    }
+}

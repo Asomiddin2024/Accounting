@@ -1,0 +1,218 @@
+.news{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    .swiper{
+        height: 100%;
+        &-pagination{
+            position: static;
+            margin-top: 20px;
+            &-bullet {
+                width: 18px;
+                height: 18px;
+                background-color: transparent;
+                opacity: 1;
+                border: 2px solid #84E2F3;
+                transition: 0.3s all ease;
+                &-active {
+                    width: 36px;
+                    background-color: #84E2F3;
+                    border-radius: 9px;
+                }
+            }
+        }
+    }
+    &__start{
+        margin-top: 30px;
+        align-items: stretch;
+        --bs-gutter-x: 24px;
+        @media#{$bigtap}{
+            margin-top: 20px;
+        }
+        .item{
+            height: 100%;
+            .img{
+                border-radius: 30px;
+                background-color: #D9D9D9;
+                overflow: hidden;
+                @media#{$tap}{
+                    border-radius: 10px;
+                }
+                @media#{$mabile}{
+                    border-radius: 30px;
+                    height: 260px;
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .item-title{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media#{$bigmobile}{
+                    margin-top: 22px;
+                }
+                @media#{$mabile}{
+                    margin-top: 16px;
+                }
+                &_p{
+                    color:#27292E;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26px;
+                    letter-spacing: -0.44px;
+                    max-width: 322px;
+                    text-transform: uppercase;
+                    @media#{$bigtap}{
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    @media#{$tap}{
+                        font-size: 14px;
+                    }
+                    @media#{$bigmobile}{
+                        font-size: 20px;
+                        letter-spacing: -0.4px;
+                        line-height: 24px;
+                    }
+                }
+                .date{
+                    width: 52px;
+                    height: 52px;
+                    background-color: #1F4DCA;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 16px;
+                    letter-spacing: -0.32px;
+                    @media#{$bigtap}{
+                        width: 48px;
+                        height: 48px;
+                    }
+                    @media#{$tap}{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 14px;
+                        line-height: 12px;
+                    }
+                    @media#{$bigmobile}{
+                        width: 52px;
+                        height: 52px;
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: -0.32px;
+                    }
+                    span{
+                        font-size: 14px;
+                        display: block;
+                        @media#{$tap}{
+                            font-size: 12px;
+                        }
+                        @media#{$bigmobile}{
+                            font-size: 14px;
+                            line-height: 100%;
+                            letter-spacing: -0.28px;
+                        }
+                    }
+                }
+            }
+            .item-main{
+                opacity: 0.8;
+                margin-top: 10px;
+                color:#27292E;
+                font-family: "Jost", sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: -0.3px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @media#{$bigmobile}{
+                    font-size: 14px;
+                    margin-top: 12px;
+                    letter-spacing: -0.28px;
+                    line-height: 20px;
+                }
+                @media#{$mabile}{
+                    -webkit-line-clamp: 5;
+                }
+                span{
+                    font-family: "Montserrat", sans-serif;
+                    color: #1F4DCA;
+                }
+            }
+            .link{
+                display: inline-flex;
+                margin-top: 20px;
+                align-items: center;
+                gap:0 12px;
+                text-decoration: none;
+                color:#27292E;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: -0.36px;
+                transition: .3s all ease;
+                @media#{$bigtap}{
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+                @media#{$bigmobile}{
+                    margin-top: 15px;
+                    font-size: 18px;
+                    letter-spacing: -0.36px;
+                    line-height: 18px;
+                }
+                &:hover{
+                    color: #1F4DCA;
+                }
+            }
+        }
+    }
+    .button{
+        margin-top: 37px;
+        text-align: center;
+        @media#{$bigtap}{
+            margin-top: 20px;
+        }
+        @media#{$bigmobile}{
+            display: none;
+        }
+        a{
+            display: inline-block;
+            border-radius: 27px;
+            border: 2px solid #27292E;
+            padding: 16px 34px;
+            text-decoration: none;
+            color:#27292E;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+            transition: .3s all ease;
+            &:hover{
+                background-color: #27292E;
+                color: #FFF;
+            }
+        }
+    }
+}

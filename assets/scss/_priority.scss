@@ -1,0 +1,141 @@
+.priority{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$laptop}{
+        margin-top: 70px;
+    }
+    &__start{
+        &--title{
+            justify-content: space-between;
+            align-items: end;
+            @media#{$tap}{
+                flex-direction: column;
+                align-items: start;
+                gap:20px 0;
+            }
+            p{
+                color:#27292E;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                @media#{$mabile}{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &--cards{
+            margin-top: 30px;
+            align-items: stretch;
+            --bs-gutter-x: 5px;
+            @media#{$bigtap}{
+                margin-top: 20px;
+            }
+            @media#{$tap}{
+                flex-direction: column;
+                gap:5px 0;
+            }
+            .cards-left{
+                border-radius: 36px;
+                background: url(../img/Vector2.svg) left top no-repeat #1F4DCA;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                overflow: hidden;
+                @media#{$mabile}{
+                    background: url(../img/Vector2.svg) left 25px/267px no-repeat #1F4DCA;
+                    border-radius: 24px;
+                    padding-top: 30px;
+                }
+                img{
+                    @media#{$mabile}{
+                        width: 202px;
+                    }
+                }
+            }
+            .cards-right{
+                display: flex;
+                flex-direction: column;
+                gap:5px 0;
+                &-card{
+                    border-radius: 30px;
+                    background-color: #1F4DCA;
+                    padding: 25px;
+                    @media#{$mabile}{
+                        padding: 20px;
+                        border-radius: 24px;
+                    }
+                    &:nth-child(4){
+                        span{
+                            @media#{$mabile}{
+                                letter-spacing: -0.42px;
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    .card-top{
+                        display: flex;
+                        align-items: center;
+                        gap:0 10px;
+                        .img{
+                            flex: 0 0 auto;
+                            width: 52px;
+                            height: 52px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            @media#{$bigtap}{
+                                width: 48px;
+                                height: 48px;
+                            }
+                            @media#{$mabile}{
+                                width: 52px;
+                                height: 52px;
+                            }
+                        }
+                        p{
+                            color: #FFF;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height:29px;
+                            text-transform: uppercase;
+                            @media#{$bigtap}{
+                                font-size: 18px;
+                            }
+                            @media#{$mabile}{
+                                font-size: 15px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    span{
+                        display: block;
+                        margin-top: 10px;
+                        color: rgba(255, 255, 255, 0.80);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 18px;
+                        letter-spacing: -0.42px;
+                        @media#{$bigtap}{
+                            font-size: 12px;
+                        }
+                        @media#{$mabile}{
+                            letter-spacing: -0.39px;
+                            font-size: 13px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

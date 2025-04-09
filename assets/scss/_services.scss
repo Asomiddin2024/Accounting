@@ -1,0 +1,192 @@
+.services{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    &__taps{
+        margin-top: 35px;
+        @media#{$bigtap}{
+            margin-top: 20px;
+        }
+        &--button{
+            display: flex;
+            align-items: center;
+            flex-wrap:wrap ;
+            gap:10px;
+            border-radius: 28px;
+            background-color: #EDF1FB;
+            padding: 5px;
+            @media#{$mabile}{
+                flex-direction: column;
+                gap:5px 0;
+            }
+            button{
+                border: none;
+                padding: 14px 20px;
+                background-color: transparent;
+                color: rgba(39, 41, 46, 0.50);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 16px;
+                @media#{$tap}{
+                    font-size: 13px;
+                }
+                @media#{$mabile}{
+                    width: 100%;
+                    font-size: 13px;
+                    line-height: 13px;
+                    padding: 14px 15px;
+                }
+            }
+            .active{
+                padding: 14px 24px;
+                border-radius: 23px;
+                background-color: #FFF;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12);
+                font-size: 18px;
+                color: #27292E;
+                @media#{$tap}{
+                    font-size: 16px;
+                }
+                @media#{$mabile}{
+                    line-height: 16px;
+                }
+            }
+        }
+        &--result{
+            margin-top: 20px;
+            --bs-gutter-x: 24px;
+            gap:24px 0;
+            display: none;
+            @media#{$bigtap}{
+                --bs-gutter-x:20px;
+                gap:20px 0;
+            }
+            @media#{$mabile}{
+                flex-direction: column;
+            }
+            &:first-child{
+                display: flex;
+            }
+            .col-6{
+                @media#{$mabile}{
+                    width: 100%;
+                }
+            }
+            .tap-card{
+                border-radius: 30px;
+                border: 2px solid rgba(31, 77, 202, 0.10);
+                background-color: #EDF1FB;
+                height: 255px;
+                padding: 30px;
+                position: relative;
+                @media#{$smalllaptop}{
+                    height: 290px;
+                }
+                @media#{$bigmobile}{
+                    padding: 30px 20px;
+                }
+                @media#{$mabile}{
+                    height: 255px;
+                }
+                .img{
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                    background: url(../img/services-tap-card-img.svg) center no-repeat #1F4DCA;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media#{$bigtap}{
+                        width: 48px;
+                        height: 48px;
+                    }
+                    @media#{$mabile}{
+                        width: 58px;
+                        height: 58px;
+                    }
+                    p{
+                        color: #FFF;
+                        font-size: 8px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 10px;
+                        letter-spacing: -0.4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .word{
+                    color:#27292E;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    margin-top: 20px;
+                    @media#{$bigtap}{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    @media#{$mabile}{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                    }
+                }
+                .tap-prise{
+                    position: absolute;
+                    left: 30px;
+                    bottom: 30px;
+                    color: var(--TXT, #27292E);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19px;
+                    text-transform: lowercase;
+                    @media#{$mabile}{
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        margin:30px auto 0 auto;
+        text-align: center;
+        @media#{$bigtap}{
+            margin-top: 20px;
+        }
+        @media#{$mabile}{
+            width: 100%;
+        }
+        a{
+            border-radius: 27px;
+            border: 2px solid #27292E;
+            text-decoration: none;
+            padding: 16px 36px;
+            display: inline-block;
+            color: var(--TXT, #27292E);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+            text-transform: lowercase;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+            transition: .3s all ease;
+            &:hover{
+                background-color: #27292E;
+                color: #fff;
+            }
+            @media#{$bigtap}{
+                width: 100%;
+            }
+        }
+    }
+}

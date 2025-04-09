@@ -1,0 +1,44 @@
+*,p,a,ul,li{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @media(max-width:1260px){
+        max-width: 100%;
+    }
+    @media#{$tap}{
+        padding: 0 20px;
+    }
+    @media#{$mabile}{
+        padding: 0 15px;
+    }
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.title{
+    color:#27292E;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.96px;
+    @media#{$bigtap}{
+        font-size: 30px;
+        line-height: 33px;
+    }
+    @media#{$mabile}{
+        letter-spacing: -0.56px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+.wrapper{
+    overflow: hidden;
+    position: relative;
+}

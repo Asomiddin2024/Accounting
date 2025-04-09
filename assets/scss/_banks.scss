@@ -1,0 +1,66 @@
+.banks{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    .swiper{
+        @media#{$bigmobile}{
+            height: 170px;
+        }
+        &-pagination{
+            bottom: 0;
+            @media#{$mabile}{
+                bottom: -3px;
+            }
+            &-bullet{
+                width: 18px;
+                height: 18px;
+                background-color: transparent;
+                opacity: 1;
+                border: 2px solid #84E2F3;
+                transition: 0.3s all ease;
+                &-active{
+                    width: 36px;
+                    background-color: #84E2F3;
+                    border-radius: 9px;
+                }
+            }
+        }
+    }
+    &__start{
+        margin-top: 40px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @media#{$bigtap}{
+            margin-top: 20px;
+        }
+        @media#{$mabile}{
+            margin-top: 30px;
+        }
+        a{
+            display:flex;
+            border-radius: 30px;
+            padding: 33px 0;
+            background: #FFF;
+            box-shadow: 4px 4px 12px 0px rgba(12, 19, 33, 0.08);
+            width: calc(20% - 8px);
+            align-items: center;
+            justify-content: center;
+            @media#{$smalllaptop}{
+                padding: 33px 15px;
+            }
+            @media#{$bigmobile}{
+                height: 130px;
+            }
+            img{
+                @media#{$smalllaptop}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

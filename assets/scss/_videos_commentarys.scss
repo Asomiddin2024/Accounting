@@ -1,0 +1,106 @@
+.videos_commentarys{
+    margin-top: 120px;
+    background-color: #1F4DCA;
+    padding: 120px 0;
+    @media#{$bigtap}{
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+    @media#{$mabile}{
+        margin-top: 65px;
+        padding: 70px 0;
+    }
+    .title{
+        color: #fff;
+    }
+    .swiper{
+        @media#{$bigmobile}{
+            height: 250px;
+        }
+        &-pagination{
+            bottom: 0;
+            @media#{$mabile}{
+                bottom: -3px;
+            }
+            &-bullet{
+                @media#{$bigmobile}{
+                    width: 18px;
+                    height: 18px;
+                    background-color: transparent;
+                    opacity: 1;
+                    border: 2px solid #84E2F3;
+                    transition: 0.3s all ease;
+                    bottom: 0;
+                }
+                &-active{
+                    width: 36px;
+                    background-color: #84E2F3;
+                    border-radius: 9px;
+                }
+            }
+        }
+    }
+    &__start{
+        margin-top: 30px;
+        align-items: center;
+        --bs-gutter-x: 24px;
+        @media#{$mabile}{
+            margin-top: 20px;
+        }
+        a{
+            background:#27292E 
+            url(../img/videos_commentarys1.png) center bottom no-repeat;
+            border-radius: 30px;
+            width: 100%;
+            height: 240px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            @media#{$bigmobile}{
+                height: 210px;
+            }
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: rgba(39, 41, 46, 0.70);
+                z-index: 2;
+                pointer-events: none;
+            }
+            .video_play{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 3;
+            }
+        }
+    }
+    .button{
+        text-align: center;
+        margin-top: 30px;
+        a{
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 27px;
+            border: 2px solid #FFF;
+            padding: 16px 36px;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+            transition: .3s all ease;
+            @media#{$mabile}{
+                width: 100%;
+            }
+            &:hover{
+                background-color: #fff;
+                color: #1F4DCA;
+            }
+        }
+    }  
+}

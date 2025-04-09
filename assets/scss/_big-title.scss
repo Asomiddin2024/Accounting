@@ -1,0 +1,93 @@
+.big-title{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    &__start{
+        align-items: stretch;
+        justify-content: space-between;
+        @media#{$tap}{
+            flex-direction: column-reverse;
+            gap:20px 0;
+            position: relative;
+            padding-top: 54px;
+        }
+        @media#{$mabile}{
+            padding-top: 48px;
+        }
+        &--left{
+            .title{
+                @media#{$tap}{
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            .main-title{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap:10px 0;
+                color:#27292E;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 23px;
+                letter-spacing: -0.45px;
+                @media#{$tap}{
+                    margin-top: 0;
+                }
+                @media#{$mabile}{
+                    letter-spacing: -0.42px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+            .link{
+                display: inline-flex;
+                gap:0 12px;
+                align-items: center;
+                text-decoration: none;
+                margin-top: 44px;
+                color:#27292E;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: -0.36px;
+                transition: .3s all ease;
+                @media#{$mabile}{
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: -0.32px;
+                }
+                &:hover{
+                    color: #1F4DCA;
+                }
+                @media#{$bigtap}{
+                    margin-top: 20px;
+                }
+            }
+        }
+        &--right{
+            border-radius: 30px;
+            height: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            background: url(../img/Vector4.svg) left top  no-repeat #1F4DCA;
+            overflow: hidden;
+            @media#{$mabile}{
+                padding-top: 33px;
+                background: url(../img/Vector4.svg) left top/230px  no-repeat #1F4DCA;
+            }
+            img{
+                @media#{$mabile}{
+                    width: 270px;
+                }
+            }
+        }
+    }
+}

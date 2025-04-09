@@ -1,0 +1,90 @@
+.partners{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    &__start{
+        align-items: center;
+        justify-content: space-between;
+        --bs-gutter-x: 0;
+        border-radius: 30px;
+        background: linear-gradient(284deg, #84E2F3 -7.11%, #2351CE 73.29%);
+        padding: 50px 50px 50px 40px;
+        @media#{$bigtap}{
+            flex-direction: column;
+            gap:20px 0;
+        }
+        @media#{$mabile}{
+            padding: 40px 20px;
+            gap:30px 0;
+        }
+        &--left{
+            @media#{$bigtap}{
+                text-align: center;
+            }
+            @media#{$mabile}{
+                text-align: left;
+            }
+            .title{
+                color: #fff;
+            }
+            .img{
+                margin-top: 56px;
+                padding-left: 10px;
+                @media#{$bigtap}{
+                    margin-top: 20px;
+                    padding-left: 0;
+                }
+                @media#{$mabile}{
+                    margin-top: 30px;
+                }
+                img{
+                    @media#{$bigmobile}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        // .col-lg-6.col-12{
+        //     width: 50%;
+        // }
+        &--right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            align-items: center;
+            gap:24px;
+            @media#{$laptop}{
+                justify-content: center;
+            }
+            @media#{$mabile}{
+                flex-direction: row;
+                gap:10px;
+            }
+            .item{
+                flex: 0 0 auto;
+                width: 160px;
+                height: 160px;
+                border-radius: 30px;
+                background: #FFF;
+                box-shadow: 4px 4px 12px 0px rgba(12, 19, 33, 0.08);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media#{$mabile}{
+                    height: 120px;
+                    width: 120px;
+                    padding: 0 15px;
+                }
+                img{
+                    @media#{$mabile}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

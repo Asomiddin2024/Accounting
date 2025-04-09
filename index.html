@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <!-- swiper -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <!-- nice-select -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Accounting</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="hero">
+            <header class="header">
+                <div class="container">
+                    <div class="header__top">
+                        <a href="#" class="header__top--logo">
+                            <img src="assets/img/header-logo.svg" alt="">
+                            <p>роф</p>
+                            <span>Бухгалтерия</span>
+                        </a>
+                        <a href="#" class="header__top--hour">
+                            <p class="hour-word">
+                                <img src="assets/img/hour.svg" alt="">
+                                <span>График работы: </span>
+                            </p>
+                            <p class="hour-result">
+                                с 09:00 до 18:00. Сб,Вс выходной
+                            </p>
+                        </a>
+                        <div class="header__top--network">
+                            <a href="#">
+                                <img src="assets/img/tme.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/whatsapp.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/insta.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header__top--phone">
+                            <a href="tel:+7499 2887442">+7 (499) 288-74-42</a>
+                            <span></span>
+                            <a href="tel:+79851183707">
+                                +7 (985) 118-37-07
+                                <p>Заказать звонок</p>
+                            </a>
+                        </div>
+                        <div class="addition">
+                            <a href="#" class="header__top--phone_icon"></a>
+                            <div class="menu">
+                                <span class="top"></span>
+                                <span class="center"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__bottom">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Калькулятор</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Наши достижения</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Oтзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row hero__start">
+                    <div class="col-md-6 col-12">
+                        <div class="hero__start--left">
+                            <div class="left-title">
+                                Создадим бизнес под ключ
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/diamond.svg" alt="">
+                                    <p>Регистрация организаций и индивидуальных предпринимателей</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/diamond.svg" alt="">
+                                    <p>Внесение изменений в ЕГРЮЛ/ЕГРИП</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/diamond.svg" alt="">
+                                    <p>Прекращение деятельности организаций и ИП</p>
+                                </li>
+                            </ul>
+                            <div class="button">
+                                <a href="#" id="modal-active">Заказать услуги</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="hero__start--right">
+                            <div class="right-item">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="assets/img/checkbox.svg" alt="">
+                                    </div>
+                                    <p>Соблюдение законодательства</p>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="assets/img/checkbox.svg" alt="">
+                                    </div>
+                                    <p>Индивидуальный подход</p>
+                                </div>
+                            </div>
+                            <div class="right-item">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="assets/img/checkbox.svg" alt="">
+                                    </div>
+                                    <p>Профессионализм и опыт</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-container">
+                <div class="modal">
+                    <div class="modal__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                            <path d="M1.38702 0.737915C1.06972 0.420614 0.555277 0.420614 0.237976 0.737915C-0.0793253 1.05522 -0.0793253 1.56966 0.237976 1.88696L5.35101 7L0.237976 12.113C-0.0793248 12.4303 -0.0793251 12.9448 0.237976 13.2621C0.555277 13.5794 1.06972 13.5794 1.38702 13.2621L6.50006 8.14905L11.613 13.262C11.9303 13.5793 12.4447 13.5793 12.762 13.262C13.0793 12.9447 13.0793 12.4302 12.762 12.1129L7.64911 7L12.762 1.88709C13.0793 1.56978 13.0793 1.05534 12.762 0.738037C12.4447 0.420736 11.9303 0.420736 11.613 0.738037L6.50006 5.85095L1.38702 0.737915Z" fill="white"/>
+                          </svg>
+                    </div>
+                    <div class="modal__title">Заказать звонок</div>
+                    <form class="modal__form">
+                        <div class="modal__form--input">
+                            <div class="item">
+                                <p>Ваше Имя</p>
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="item">
+                                <p>Телефон</p>
+                                <input type="tel" placeholder="8()">
+                            </div>
+                        </div>
+                        <div class="modal__checkbox">
+                            <label>
+                                <input type="checkbox" checked>
+                                <div class="checked">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                        <path d="M2 6L6 10L14 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                            <p>
+                                даю согласие на <a href="#">обработку персональных данных</a>
+                            </p>
+                        </div>
+                        <button>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="menu__container">
+                <div class="menu-result">
+                    <a href="#" class="hour">
+                        <p>
+                            <img src="assets/img/hour.svg" alt="">
+                            График работы: 
+                        </p>
+                        <p>с 09:00 до 18:00. Сб,Вс выходной</p>
+                    </a>
+                    <div class="phone">
+                        <a href="tel:+74992887442">+7 (499) 288-74-42</a>
+                        <a href="tel:+79851183707">+7 (985) 118-37-07
+                            <p>Заказать звонок</p>
+                        </a>
+                    </div>
+                    <div class="network">
+                        <a href="#">
+                            <img src="assets/img/tme.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/whatsapp.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/insta.svg" alt="">
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Калькулятор</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Наши достижения</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="title">Наши услуги</div>
+                <div class="services__taps">
+                    <div class="services__taps--button">
+                        <button tap-index="button1">Регистрация</button>
+                        <button tap-index="button2">Бухгалтерские услуги</button>
+                        <button tap-index="button3">Юридические услуги</button>
+                        <button tap-index="button4">Ликвидация</button>
+                        <button tap-index="button5">Услуги и программы от партнеров</button>
+                        <button tap-index="button6">Доп услуги</button>
+                        <button tap-index="button7">Внесение изменений в ЕГРЮЛ/ЕГРИП</button>
+                        <button tap-index="button8">Аудиторские услуги</button>
+                    </div>
+                    <div class="services__taps--result row" button-index="button1">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>НКО</p>
+                                </div>
+                                <p class="word">Регистрация НКО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>ИП</p>
+                                </div>
+                                <p class="word">Регистрация ИП под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>ИП</p>
+                                </div>
+                                <p class="word">Регистрация ИП в качестве работодателя</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2.svg);">
+                                </div>
+                                <p class="word">Регистрация филиала организации с отдельным балансом</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img3.svg);">
+                                </div>
+                                <p class="word">Регистрация обособленного подразделения</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img4.svg);">
+                                </div>
+                                <p class="word">Регистрация кассы под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img5.svg);">
+                                    <p></p>
+                                </div>
+                                <p class="word">Регистрация товарного знака</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img6.svg);">
+                                </div>
+                                <p class="word">Регистрация в Пробирной палате</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img7.svg);">
+                                </div>
+                                <p class="word">Регистрация контракта Внешнеэкономической деятельности</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img8.svg);">
+                                </div>
+                                <p class="word">Внесений изменений
+                                    в ЕГРЮЛ / ЕГРИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img9.svg);">
+                                </div>
+                                <p class="word">Внесение изменений в Устав</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img10.svg);">
+                                </div>
+                                <p class="word">Вход участника в ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img11.svg);">
+                                </div>
+                                <p class="word">Выход участника из ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img12.svg);">
+                                </div>
+                                <p class="word">Увеличение Уставного капитала</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img13.svg);">
+                                </div>
+                                <p class="word">Уменьшение Уставного капитала</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img14.svg);">
+                                </div>
+                                <p class="word">Смена юридического адреса</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img15.svg);">
+                                </div>
+                                <p class="word">Добавление / исключение кодов экономической деятельности (ОКВЭД)</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button2">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-1.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-2.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-3.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание НКО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-4.svg);">
+                                </div>
+                                <p class="word">Нулевая отчетность</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-5.svg);">
+                                </div>
+                                <p class="word">Оптимизация налогов</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button3">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button4">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-1.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-2.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-3.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание НКО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-4.svg);">
+                                </div>
+                                <p class="word">Нулевая отчетность</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-5.svg);">
+                                </div>
+                                <p class="word">Оптимизация налогов</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button5">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-1.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-2.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-3.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание НКО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-4.svg);">
+                                </div>
+                                <p class="word">Нулевая отчетность</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-5.svg);">
+                                </div>
+                                <p class="word">Оптимизация налогов</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button6">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-1.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-2.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-3.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание НКО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-4.svg);">
+                                </div>
+                                <p class="word">Нулевая отчетность</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-5.svg);">
+                                </div>
+                                <p class="word">Оптимизация налогов</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__taps--result row" button-index="button7">
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-1.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ИП</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-2.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание ООО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-3.svg);">
+                                </div>
+                                <p class="word">Бухгалтерское обслуживание НКО</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-4.svg);">
+                                </div>
+                                <p class="word">Нулевая отчетность</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img" style="background-image: url(assets/img/services-tap-card-img2-5.svg);">
+                                </div>
+                                <p class="word">Оптимизация налогов</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 borderr">
+                            <div class="tap-card">
+                                <div class="img">
+                                    <p>000</p>
+                                </div>
+                                <p class="word">Регистрация ООО под ключ</p>
+                                <span class="tap-prise">от 10 000 ₽ </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__button">
+                    <a href="#">пОКАЗАТЬ ВСЕ УСЛУГИ</a>
+                </div>
+            </div>
+        </section>
+        <section class="priority">
+            <div class="container">
+                <div class="priority__start">
+                    <div class="priority__start--title row">
+                        <div class="col-md-4 col-12">
+                            <div class="title">
+                                Почему выбирают нас:
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <p>
+                                Эти преимущества позволяют нам выделяться на рынке бухгалтерских услуг и обеспечивать нашим клиентам высокий уровень сервиса. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="priority__start--cards row">
+                        <div class="col-md-5 col-12">
+                            <div class="cards-left">
+                                <img src="assets/img/priority-img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <div class="cards-right">
+                                <div class="cards-right-card">
+                                    <div class="card-top">
+                                        <div class="img">
+                                            <img src="assets/img/priority-card-icon1.svg" alt="">
+                                        </div>
+                                        <p>Профессионализм и опыт:</p>
+                                    </div>
+                                    <span>
+                                        Наша команда состоит из высококвалифицированных бухгалтеров, юристов и налоговых консультантов с многолетним опытом работы в различных отраслях. Мы знаем как эффективно решать финансовые задачи, внедрять технологии внутреннего контроля, для обеспечения минимизации налоговых рисков.
+                                    </span>
+                                </div>
+                                <div class="cards-right-card">
+                                    <div class="card-top">
+                                        <div class="img">
+                                            <img src="assets/img/priority-card-icon2.svg" alt="">
+                                        </div>
+                                        <p>Персональный подход:</p>
+                                    </div>
+                                    <span>
+                                        Учитывая уникальность каждой компании, создаются индивидуальные условия,соответствующие потребностям клиентов. <br>
+                                        Работа бухгалтерской службы выполняется в режиме реального времени и полностью замещает отсутствие штатной единицы.
+                                    </span>
+                                </div>
+                                <div class="cards-right-card">
+                                    <div class="card-top">
+                                        <div class="img">
+                                            <img src="assets/img/priority-card-icon3.svg" alt="">
+                                        </div>
+                                        <p>Современные технологии:</p>
+                                    </div>
+                                    <span>
+                                        Наша компания использует передовые бухгалтерские программы и инструменты автоматизации, что позволяет повышать эффективность работы и сокращать время обработки данных. Это также обеспечивает высокую степень точности и надежности.
+                                    </span>
+                                </div>
+                                <div class="cards-right-card">
+                                    <div class="card-top">
+                                        <div class="img">
+                                            <img src="assets/img/priority-card-icon4.svg" alt="">
+                                        </div>
+                                        <p>Соблюдение законодательства:</p>
+                                    </div>
+                                    <span>
+                                        Специалисты бухгалтерской службы контролируют изменения Законодательства РФи иных нормативных актов. Своевременно доводят информацию о них.
+                                    </span>
+                                </div>
+                                <div class="cards-right-card">
+                                    <div class="card-top">
+                                        <div class="img">
+                                            <img src="assets/img/priority-card-icon5.svg" alt="">
+                                        </div>
+                                        <p>Ценовая политика и надёжность</p>
+                                    </div>
+                                    <span>
+                                        Ценовая политика компании формируется по определенным коэффициент/дефляторам, исходя из ряда показателей клиента. <br>
+                                        Цель нашей компании- быть надёжным партнёром и сопровождать развитие бизнеса на каждом этапе.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calculator">
+            <div class="container">
+                <div class="title">Калькулятор стоимости</div>
+                <div class="calculator__top row">
+                    <div class="col-lg-7 col-12">
+                        <form class="calculator__top--left">
+                            <div class="left-flex">
+                                <div class="form-item">
+                                    <div class="item">
+                                        <p>Форма собственности </p>
+                                        <select>
+                                            <option>ИП</option>
+                                            <option>ОСНО</option>
+                                            <option>Услуги</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <p>Вид деятельности</p>
+                                        <select>
+                                            <option>Услуги</option>
+                                            <option>ИП</option>
+                                            <option>ОСНО</option>
+                                            <option>Услуги</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <p>Количество сотрудников</p>
+                                        <input type="number" value="1">
+                                    </div>
+                                    <div class="item">
+                                        <p>Количество р/сч</p>
+                                        <input type="number" value="1">
+                                    </div>
+                                    <button>Рассчитать</button>
+                                </div>
+                                <div class="form-item">
+                                    <div class="item">
+                                        <p>Система налогообложения</p>
+                                        <select>
+                                            <option>ОСНО</option>
+                                            <option>ИП</option>
+                                            <option>ОСНО</option>
+                                            <option>Услуги</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <p>Кол-во операций по банку и кассе</p>
+                                        <select>
+                                            <option>операций</option>
+                                            <option>ИП</option>
+                                            <option>ОСНО</option>
+                                            <option>Услуги</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <p>Количество документов</p>
+                                        <input type="number" value="1">
+                                    </div>
+                                    <div class="item">
+                                        <p>Количество касс и терминалов</p>
+                                        <input type="number" value="1">
+                                    </div>
+                                    <div class="item last">
+                                        <input type="text" readonly value="От 0 ₽">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="warning">
+                                * минимальная стоимость услуги от 5000₽
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5 d-none d-lg-block">
+                        <div class="calculator__top--right">
+                            <img src="assets/img/calculator-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__bottom row">
+                    <div class="col-md-5 col-12">
+                        <div class="calculator__bottom--left">
+                            <p>Требуется консультация?</p>
+                            <span>Оставьте заявку и наши специалисты проконсультируют вас</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <form class="calculator__bottom--right">
+                            <div class="item">
+                                <p>Ваше Имя</p>
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="item">
+                                <p>Телефон</p>
+                                <input type="tel" id="telefon" placeholder="8()">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <div class="checked">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                            <path d="M2 6L6 10L14 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <p>
+                                    Даю согласие на
+                                    <a href="#"> Oбработку персональных данных</a>
+                                </p>
+                            </div>
+                            <button>
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-vedio">
+            <div class="container">
+                <div class="section-vedio__start">
+                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=J1d4nCXNlDs">
+                        <div class="vedio_play">
+                            <img src="assets/img/vedio-play.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="big-title">
+            <div class="container">
+               <div class="big-title__start row">
+                    <div class="col-md-6 col-12">
+                        <div class="big-title__start--left">
+                            <div class="title">Заголовок </div>
+                            <div class="main-title">
+                                <p>
+                                    текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст
+                                </p>
+                                <p>
+                                    текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-тексттекст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст 
+                                </p>
+                            </div>
+                            <a href="#" class="link">
+                                <p>Читать далее</p>
+                                <img src="assets/img/link.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="big-title__start--right">
+                            <img src="assets/img/big-title-img.png" alt="">
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <div class="partners__start row">
+                    <div class="col-lg-5 col-12">
+                        <div class="partners__start--left">
+                            <div class="title">Наши партнеры</div>
+                            <div class="img">
+                                <img src="assets/img/partners-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="partners__start--right">
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo1.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo2.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo3.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo4.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo5.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="assets/img/partners-logo6.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="achievements">
+            <div class="container">
+                <div class="title">
+                    Наши достижения
+                </div>
+                <div class="achievements__slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img1.png" alt="">
+                                    <a class="open-img" href="https://s3-alpha-sig.figma.com/img/39dc/a503/ce2076d22955ae999aeb09df802d9d82?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=e6PaHNaDOh31y~2IytSL48r38MqrdZaRHRp8FQIg7-8ZmI9R4nU2xrgPKiqg6Tcaq8GWaeXHMUKdVlLEPltii7s4WljWvaO0BVSWP-5Zlt11vs1tbzPQnw-sgwN6W5~UAIkOs9CFnVJbxT7a5eE-qDfizi~nEZC1wUi3kZXyCVKrzByfT7Ul-yPdgPZnikNk1PEXHrkYp1abzuCrjLwcSkL6A9wWQwmuyHnzvN-1Qxvt85hbv1ONRxD76sg8kROBbZv7wxUNcAFOL6IAbBlzupyQuUH1GT7vkOgDq-L5jK3zeoU~JTzigBKPsSOIBLrh~5x66dxvb6fOfY2DwVpxQQ__"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img2.png" alt="">
+                                    <a class="open-img" href="https://s3-alpha-sig.figma.com/img/ed8b/b574/efe83a30ea48b7632b6b412dbe6164bf?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K8tjUfSY58LL-8lluhwIr0OSPyInmqevco58QLDve5ERDawns-QudMg9G2TOIpzm2~lv6ZWZNR1rdcwRrOaJVyN7MbVLK1QzUTibRIXdZ9gZQWkG7agPeG86JZHKqmSMrwr9SpBIG4ZvZ9SZX045kdV6vLioglpa~cwm0MAEJ0OaSKxnITVV0uKQUg0-DmJ2ke-22Tm6WYMdFf4T52-QrX~usb8NJYQET85U1Dt4DpEbHDRJv1KytcoqLYIssJTfrrXGWGzZiBW27E4alY5ztqN19m~Sh-vgzofS9-6nd1rU-1ZMJlJFQ69iwr5~YLzcMVGHoWkXBcz99-Ivw94smQ__">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img3.png" alt="">
+                                    <a class="open-img" href="https://s3-alpha-sig.figma.com/img/31f1/4da7/f72c3b99dd18de2a4f20d481f5b7bc00?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=k00uPBDDk8rdk0Y8kpfQj53HddfOYxNWJTf9~3Y5xg3REXy3g2qCbgVG9TIxpQGe1plyCKobw33OukA-zoNE-JwE3pde7MzCvCz~lNWE5VvCMjga7vZeRp8YpqXMMrB~EDyXoG58wOzYXK68tt~6LC69Zu~7fF9RamC7DyOP2XJiAvNUbi2C6CMBYufksbuuDMOzdR68tR2cn-Sz4tgaWMDWiOOg2i3Y-o1CRTwnoAIfbKOnOmyJE0-3uTzd1dGYwbg1-XibMpEgdQkAz8FaUJs7poU~e5eQrjbfWBw9oPD9MAnaokpwjjQqbVBpmqTVb2c0kQ2dho0o0NDjFqjiJw__">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img4.png" alt="">
+                                    <a class="open-img" href="https://s3-alpha-sig.figma.com/img/4179/0f2a/d5ed93704477e5ae6ad395b5869b943c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AJkA4puNGXPNMdBYLoDQU8yoIn0NmeAmuG6AGlGNxCuxKz9OUeKARYApHsfrB2q0X-qD3Jp~q4bnxRcOY7QGmjv74ITsXrvz3Ttf1w1Nw65QmDtRqWtJ-3KZrdx99es0b5ZaMfBnT7OhCyb6bSS60fVKdyJjAyp5VPFPEK~pWGlt~JBQz4sJj78D~c-sVCfwpLg7go1QeXchveYFmcHODXa10ERF744y5f0qX-ptgeUixyRno0~7dYV~EvkGfNvQZ-BeYu5D8GoW-76n6AnR-EM8s-DGVMrrKDpAuXSS93yNus5N4ZM3SNACLUhcaVZGf32VV5HG8VIF3~DLCg7uAw__">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img1.png" alt="">
+                                    <a class="open-img" href="assets/img/achievements-img1.png">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img2.png" alt="">
+                                    <a class="open-img" href="assets/img/achievements-img1.png">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img3.png" alt="">
+                                    <a class="open-img" href="assets/img/achievements-img1.png">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/img/achievements-img4.png" alt="">
+                                    <a class="open-img" href="assets/img/achievements-img1.png">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-left swiper-management"></div>
+                    <div class="swiper-right swiper-management"></div>
+                </div>
+            </div>
+        </section>
+        <section class="videos_commentarys">
+            <div class="container">
+                <div class="title">Видео отзывы</div>
+                <div class="videos_commentarys__start row">
+                    <div class="col-4 slide">
+                        <a href="https://www.youtube.com/watch?v=4KMJ2C8H3PI" class="popup-youtube" style="background-image: url(assets/img/videos_commentarys1.png);">
+                            <div class="video_play">
+                                <img src="assets/img/vedio-play.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 slide">
+                        <a href="https://www.youtube.com/watch?v=4KMJ2C8H3PI" class="popup-youtube"  style="background-image: url(assets/img/videos_commentarys2.png);">
+                            <div class="video_play">
+                                <img src="assets/img/vedio-play.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 slide">
+                        <a href="https://www.youtube.com/watch?v=4KMJ2C8H3PI" class="popup-youtube"  style="background-image: url(assets/img/videos_commentarys3.png);">
+                            <div class="video_play">
+                                <img src="assets/img/vedio-play.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#">Смотреть все отзывы</a>
+                </div>
+            </div>
+        </section>
+        <section class="banks">
+            <div class="container">
+                <div class="title">Банки-партнёры</div>
+                <div class="banks__start">
+                    <a href="#">
+                        <img src="assets/img/bank-logo1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/bank-logo2.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/bank-logo3.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/bank-logo4.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/bank-logo5.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="title">Новости</div>
+                <div class="news__start row">
+                    <div class="col-4 slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="assets/img/news-img.png" alt="">
+                            </div>
+                            <div class="item-title">
+                                <div class="item-title_p"><p>Заголовок</p> <p>Заголовок</p></div>
+                                <div class="date">
+                                    19 <span>мар</span>
+                                </div>
+                            </div>
+                            <div class="item-main">
+                                текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-  <span>[...]</span>
+                            </div>
+                            <a href="#" class="link">
+                                <p>Читать далее</p>
+                                <img src="assets/img/link.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="assets/img/news-img.png" alt="">
+                            </div>
+                            <div class="item-title">
+                                <div class="item-title_p"><p>Заголовок</p> <p>Заголовок</p></div>
+                                <div class="date">
+                                    19 <span>мар</span>
+                                </div>
+                            </div>
+                            <div class="item-main">
+                                текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-  <span>[...]</span>
+                            </div>
+                            <a href="#" class="link">
+                                <p>Читать далее</p>
+                                <img src="assets/img/link.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 slide">
+                        <div class="item">
+                            <div class="img">
+                                <img src="assets/img/news-img.png" alt="">
+                            </div>
+                            <div class="item-title">
+                                <div class="item-title_p"><p>Заголовок</p> <p>Заголовок</p></div>
+                                <div class="date">
+                                    19 <span>мар</span>
+                                </div>
+                            </div>
+                            <div class="item-main">
+                                текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-текст текст-  <span>[...]</span>
+                            </div>
+                            <a href="#" class="link">
+                                <p>Читать далее</p>
+                                <img src="assets/img/link.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#">Смотреть все новости</a>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe id="map" src="https://yandex.com/map-widget/v1/?um=constructor%3A7794f9aecc1f36c33925ee0a81bb95b9c5420de92e307d321bef538e52d11b3f&amp;source=constructor" frameborder="0"></iframe>
+            <div class="container">
+                <div class="map__office">
+                    <div class="title">Наш офис</div>
+                    <ul>
+                        <li>
+                            <p>Адрес</p>
+                            <a href="#">г. Долгопрудный, проспект Пацаева, 7, к.1, офис 25/1</a>
+                        </li>
+                        <li>
+                            <p>Телефон</p>
+                            <a href="tel:+74992887442">+7 (499) 288-74-42</a>
+                        </li>
+                        <li>
+                            <p>Email</p>
+                            <a href="mailto:info@profbuhgalteriya.ru">info@profbuhgalteriya.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top row">
+                    <div class="col-sm-4 col-12">
+                        <a href="#" class="footer__top--logo">
+                            <img src="assets/img/header-logo.svg" alt="">
+                            <p>роф</p>
+                            <span>Бухгалтерия</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-12">
+                        <a href="#" class="footer__top--time">
+                            <p>
+                                <img src="assets/img/hour.svg" alt="">
+                                График работы: 
+                            </p>
+                            <span>с 09:00 до 18:00. Сб,Вс выходной</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="footer__top--phone">
+                            <a href="tel:+74992887442">+7 (499) 288-74-42</a>
+                            <span></span>
+                            <a href="tel:+79851183707">
+                                +7 (985) 118-37-07
+                                <p>Заказать звонок</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom row">
+                    <div class="col-sm-4 col-12">
+                        <div class="footer__bottom--left">
+                            <a href="#">
+                                <p>г. Долгопрудный, проспект Пацаева, 7, к.1, офис 25/1</p>
+                                <p>ИНН: 7733322097,</p>
+                                <p>ОГРН: 1177746685280</p>
+                            </a>
+                            <a href="mailto:info@profbuhgalteriya.ru">info@profbuhgalteriya.ru</a>
+                            <a href="#">Компания ПРОфБухгалтерия ©2024</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-12">
+                        <ul class="footer__bottom--center">
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Калькулятор</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Наши достижения</a></li>
+                            <li><a href="#">Сертификаты</a></li>
+                            <li><a href="#">отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="footer__bottom--right">
+                            <div class="network">
+                                <a href="#">
+                                    <img src="assets/img/tme.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/whatsapp.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/insta.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="right-a">
+                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+    <!-- swiper -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- nice-select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- main.js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

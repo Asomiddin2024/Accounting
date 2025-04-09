@@ -1,0 +1,126 @@
+.achievements{
+    margin-top: 120px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 70px;
+    }
+    &__slider{
+        margin-top: 30px;
+        position: relative;
+        @media#{$mabile}{
+            margin-top: 18px;
+        }
+        .swiper{
+            width: 100%;
+            height: 408px;
+            position: relative;
+            @media#{$tap}{
+                height: 334px;
+            }
+            @media#{$bigmobile}{
+                height: 604px;
+            }
+            @media#{$mabile}{
+                height: 411px;
+            }
+            .swiper-wrapper{
+                .swiper-slide{
+                    .img{
+                        border-radius: 30px;
+                        background-color: #F6F6F6;
+                        box-shadow: 4px 4px 12px 0px rgba(12, 19, 33, 0.08);
+                        padding:20px;
+                        position: relative;
+                        transition: .3s all ease;
+                        @media#{$bigmobile}{
+                            width: 440px;
+                            margin: 0 auto;
+                        }
+                        @media#{$mabile}{
+                            width: 289px;
+                            padding: 24px;
+                        }
+                        &:hover{
+                            a{
+                                display: block;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                            border-radius: 16px;
+                        }
+                        a{
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 50%;
+                            background: url(../img/zoom.svg) center no-repeat #84E2F3;
+                            display: none;
+                            transition: .3s all ease;
+                            @media#{$bigmobile}{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                bottom: 0;
+                &-bullet{
+                    width: 18px;
+                    height: 18px;
+                    background-color: transparent;
+                    opacity: 1;
+                    border: 2px solid #84E2F3;
+                    transition: .3s all ease;
+                    &-active{
+                        width: 36px;
+                        background-color: #84E2F3;
+                        border-radius: 9px;
+                    }
+                }
+            }
+        }
+        .swiper-management{
+            display: block;
+            width: 42px;
+            height: 42px;
+            box-shadow:4px 4px 12px rgba(12, 19, 33, 0.08);
+            position: absolute;
+            border-radius: 50%;
+            top: 180px;
+            transform: translateY(-50%);
+            z-index: 2;
+            transition: .3s all ease;
+            @media#{$bigtap}{
+                display: none;
+            }
+        }
+        .swiper-right{
+            background:#FFF url(../img/swiper-right.svg) center no-repeat;
+            right: -60px;
+            &:active{
+                background: #84E2F3 url(../img/swiper-right.svg) center no-repeat;
+            }
+            @media(max-width:1330px){
+                right: 0;
+            }
+        }
+        .swiper-left{
+            left: -60px;
+            background: #FFF url(../img/swiper-left.svg) center no-repeat;
+            &:active{
+                background: #84E2F3 url(../img/swiper-left.svg) center no-repeat;
+            }
+            @media(max-width:1330px){
+                left: 0;
+            }
+        }
+    }
+}
